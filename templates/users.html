@@ -1,0 +1,11 @@
+<table border=1>
+    <!-- jinja template -->
+    <!-- index 0 for name 
+    index 1 for email -->
+    {%for user in userDetails %}
+    <tr>
+        <td> {{user[0]}} </td>    
+        <td> {{user[1]}} </td>    
+    </tr>
+    {% endfor %}
+</table>
